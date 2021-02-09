@@ -1,0 +1,19 @@
+{
+  "name": "com.archnet.service.console",
+  "version": "1.0.0",
+  "displayName": "Arch Net Service Console",
+  "description": "Service for a custom Console",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "keywords": [
+    "Arch",
+    "ArchNet",
+    "Service",
+    "Console",
+    "Custom"
+  ],
+  "author": {
+    "name": "Arch Net",
+    "email": "archnetmodule@gmail.com"
+  }
+}
