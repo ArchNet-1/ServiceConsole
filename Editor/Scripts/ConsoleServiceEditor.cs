@@ -67,7 +67,6 @@ namespace ArchNet.Service.Console.Editor
 
         #endregion
 
-
         #region Private Methods
 
 
@@ -120,8 +119,6 @@ namespace ArchNet.Service.Console.Editor
             ConsoleService.SetSelectedLog(null);
 
             _logsLoaded = new List<Log>();
-
-            ConsoleService.Reset();
 
             Application.logMessageReceived += LogMessageReceived;
         }
