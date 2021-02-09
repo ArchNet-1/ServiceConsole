@@ -1,6 +1,7 @@
 ﻿using ArchNet.Service.Console.Enum;
 using ArchNet.Service.Console.Model;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEditor;
 using UnityEngine;
 
@@ -262,7 +263,8 @@ namespace ArchNet.Service.Console.Editor
             // Load Selected Log
             if (ConsoleService.GetSelectedLog() != null)
             {
-                GUILayout.TextArea(ConsoleService.GetSelectedLog().GetLog(), textAreaStyle);
+                GUILayout.Label(ConsoleService.GetSelectedLog().GetLog(), textAreaStyle);
+                GUILayout.Label(ConsoleService.GetSelectedLog().GetStack(), textAreaStyle);
             }
 
 
@@ -474,7 +476,7 @@ namespace ArchNet.Service.Console.Editor
                     icon = infoIcon; break;
             }
 
-            boxStyle.normal.textColor =  new Color(pLog.GetColor().r / 255.0f, pLog.GetColor().g / 255.0f, pLog.GetColor().b / 255.0f);
+            //boxStyle.normal.textColor =  new Color(pLog.GetColor().r / 255.0f, pLog.GetColor().g / 255.0f, pLog.GetColor().b / 255.0f);
 
             // Create the log has button for the option of the selection
             return GUILayout.Button(new GUIContent(pLog.GetTitle(), icon), boxStyle, GUILayout.ExpandWidth(true), GUILayout.Height(45));

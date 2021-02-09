@@ -1,6 +1,7 @@
 ﻿using ArchNet.Service.Console.Enum;
 using ArchNet.Service.Console.Model;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 namespace ArchNet.Service.Console
@@ -72,10 +73,32 @@ namespace ArchNet.Service.Console
         #region Micro Services
 
         /// <summary>
+        /// Description : Get Stack of the log
+        /// </summary>
+        /// <param name="pStack"></param>
+        /// <returns></returns>
+        private static string GetStack(StackTrace pStack)
+        {
+            string lResult = "";
+
+            for (int i = 1; i < pStack.FrameCount; i++)
+            {
+                lResult += "\n_______________________________________________________________";
+                lResult += "\nFile : " + pStack.GetFrame(i).GetFileName();
+                lResult += "\nMethod : " + pStack.GetFrame(i).GetMethod().Name + "()";
+                lResult += "\nLine : " + pStack.GetFrame(i).GetFileLineNumber();
+            }
+
+            return lResult;
+        }
+
+        /// <summary>
         /// Description : Log Message in Custom Window ( Console Service Window )
         /// </summary>
         public static void Log(string pTitle, eLogPriority pPriority = eLogPriority.NONE, string pMessage = "")
         {
+            StackTrace stackTrace = new StackTrace(true);
+
             // Declare new log
             Log _newLog = new Log();
             _newLog.SetId(_logs.Count + 1);
@@ -83,6 +106,7 @@ namespace ArchNet.Service.Console
             _newLog.SetTitle(pTitle);
             _newLog.SetType(eLogType.LOG);
             _newLog.SetPriority(pPriority);
+            _newLog.SetStack(GetStack(stackTrace));
 
             // Add log in list
             _logs.Add(_newLog);
@@ -94,6 +118,8 @@ namespace ArchNet.Service.Console
         /// </summary>
         public static void Error(string pTitle, eLogPriority pPriority = eLogPriority.NONE, string pMessage = "")
         {
+            StackTrace stackTrace = new StackTrace(true);
+
             // Declare new log
             Log _newLog = new Log();
             _newLog.SetId(_errors.Count + 1);
@@ -101,6 +127,7 @@ namespace ArchNet.Service.Console
             _newLog.SetTitle(pTitle);
             _newLog.SetType(eLogType.ERROR);
             _newLog.SetPriority(pPriority);
+            _newLog.SetStack(GetStack(stackTrace));
 
             // Add log in list
             _errors.Add(_newLog);
@@ -112,6 +139,8 @@ namespace ArchNet.Service.Console
         /// </summary>
         public static void Warning(string pTitle, eLogPriority pPriority = eLogPriority.NONE, string pMessage = "")
         {
+            StackTrace stackTrace = new StackTrace(true);
+
             // Declare new log
             Log _newLog = new Log();
             _newLog.SetId(_warnings.Count + 1);
@@ -119,6 +148,7 @@ namespace ArchNet.Service.Console
             _newLog.SetTitle(pTitle);
             _newLog.SetType(eLogType.WARNING);
             _newLog.SetPriority(pPriority);
+            _newLog.SetStack(GetStack(stackTrace));
 
             // Add log in list
             _warnings.Add(_newLog);
@@ -131,6 +161,8 @@ namespace ArchNet.Service.Console
         /// </summary>
         public static void Exception(string pTitle, eLogPriority pPriority = eLogPriority.NONE, string pMessage = "")
         {
+            StackTrace stackTrace = new StackTrace(true);
+
             // Declare new log
             Log _newLog = new Log();
             _newLog.SetId(_warnings.Count + 1);
@@ -138,6 +170,7 @@ namespace ArchNet.Service.Console
             _newLog.SetTitle(pTitle);
             _newLog.SetType(eLogType.EXCEPTION);
             _newLog.SetPriority(pPriority);
+            _newLog.SetStack(GetStack(stackTrace));
 
             // Add log in list
             _warnings.Add(_newLog);
@@ -149,6 +182,8 @@ namespace ArchNet.Service.Console
         /// </summary>
         public static void Assert(string pTitle, eLogPriority pPriority = eLogPriority.NONE, string pMessage = "")
         {
+            StackTrace stackTrace = new StackTrace(true);
+
             // Declare new log
             Log _newLog = new Log();
             _newLog.SetId(_warnings.Count + 1);
@@ -156,6 +191,7 @@ namespace ArchNet.Service.Console
             _newLog.SetTitle(pTitle);
             _newLog.SetType(eLogType.ASSERT);
             _newLog.SetPriority(pPriority);
+            _newLog.SetStack(GetStack(stackTrace));
 
             // Add log in list
             _warnings.Add(_newLog);

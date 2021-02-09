@@ -28,6 +28,8 @@ namespace ArchNet.Service.Console.Model
         // Content of the Log
         private string _message = "";
 
+        private string _stack = "";
+
         #endregion
 
         #region Getter / Setter
@@ -60,6 +62,14 @@ namespace ArchNet.Service.Console.Model
             }
         }
 
+        public void SetStack(string pStack)
+        {
+            if (pStack != "")
+            {
+                _stack = pStack;
+            }
+        }
+
         public void SetTitle(string pTitle)
         {
             if(pTitle != "")
@@ -79,6 +89,11 @@ namespace ArchNet.Service.Console.Model
         public string GetMessage()
         {
             return _message;
+        }
+
+        public string GetStack()
+        {
+            return _stack;
         }
 
         public string GetTitle()
