@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace ArchNet.Service.Console.Editor
 {
+    /// <summary>
+    /// [SERVICE] - [ARCH NET] - [CONSOLE] : Advanced Settings Editor Window
+    /// @author : LOUIS PAKEL
+    /// </summary>
     public class AdvancedSettingsWindow : EditorWindow
     {
         #region Private Fields
@@ -36,6 +40,8 @@ namespace ArchNet.Service.Console.Editor
         }
 
         #endregion
+
+        #region Private Methods
 
         /// <summary>
         /// Description : Draw all priority
@@ -71,5 +77,7 @@ namespace ArchNet.Service.Console.Editor
             ConsoleService.GetAdvancedSettings().loop = _loop;
             ConsoleService.GetAdvancedSettings().custom = _custom;
         }
+
+        #endregion
     }
 }

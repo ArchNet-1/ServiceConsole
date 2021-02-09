@@ -7,8 +7,8 @@ using UnityEngine;
 namespace ArchNet.Service.Console.Editor
 {
     /// <summary>
-    /// Custom Console Service for editor debug 
-    /// @author: Louis Pakel
+    /// [SERVICE] - [ARCH NET] - [CONSOLE] : Console Service Editor Window
+    /// @author : LOUIS PAKEL
     /// </summary>
     class ConsoleServiceEditor : EditorWindow
     {
@@ -67,8 +67,9 @@ namespace ArchNet.Service.Console.Editor
 
         #endregion
 
-        [MenuItem("ArchNet/Services/Console")]
+        #region Private Methods
 
+        [MenuItem("ArchNet/Services/Console")]
         static void Init()
         {
             ConsoleServiceEditor window = (ConsoleServiceEditor)EditorWindow.GetWindow(typeof(ConsoleServiceEditor), true, "ArchNet Console");
@@ -534,5 +535,6 @@ namespace ArchNet.Service.Console.Editor
             _logsLoaded.Add(lNewLog);
         }
 
+        #endregion
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine;
 namespace ArchNet.Service.Console
 {
     /// <summary>
-    /// Custom Console Service 
-    /// @author: Louis Pakel
+    /// [SERVICE] - [ARCH NET] - [CONSOLE] : Service Custom Console
+    /// @author : LOUIS PAKEL
     /// </summary>
     public static class ConsoleService
     {

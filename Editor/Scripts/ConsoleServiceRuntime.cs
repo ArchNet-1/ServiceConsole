@@ -4,8 +4,8 @@ using UnityEngine;
 namespace Sportfaction.CasualFantasy.Services.ServiceDebug
 {
     /// <summary>
-    /// Custom Console Service for runtime debug 
-    /// @author: Louis Pakel
+    /// [SERVICE] - [ARCH NET] - [CONSOLE] : Console Runtime
+    /// @author : LOUIS PAKEL
     /// </summary>
     public class ConsoleServiceRuntime : MonoBehaviour
     {
@@ -20,6 +20,8 @@ namespace Sportfaction.CasualFantasy.Services.ServiceDebug
         private CanvasGroup _error;
 
         #endregion
+
+        #region Public Methods
 
         /// <summary>
         /// Description : Initiate Canvas Console Service for mobile
@@ -41,6 +43,8 @@ namespace Sportfaction.CasualFantasy.Services.ServiceDebug
             _error.blocksRaycasts = false;
             _error.interactable = false;
         }
+
+        #endregion
 
         #region Toggles
 

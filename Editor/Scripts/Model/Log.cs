@@ -4,8 +4,8 @@ using UnityEngine;
 namespace ArchNet.Service.Console.Model
 {
     /// <summary>
-    /// Debug Service Log Model Class
-    /// @author : Louis PAKEL
+    /// [SERVICE] - [ARCH NET] - [CONSOLE] : Model class Log
+    /// @author : LOUIS PAKEL
     /// </summary>
     public class Log
     {
@@ -29,7 +29,6 @@ namespace ArchNet.Service.Console.Model
         private string _message = "";
 
         #endregion
-
 
         #region Getter / Setter
         public void SetColor(Color pColor)
