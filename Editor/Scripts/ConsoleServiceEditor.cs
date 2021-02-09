@@ -123,8 +123,6 @@ namespace ArchNet.Service.Console.Editor
 
             ConsoleService.Reset();
 
-            ConsoleService.Test();
-
             Application.logMessageReceived += LogMessageReceived;
         }
 

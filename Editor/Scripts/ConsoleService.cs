@@ -46,30 +46,6 @@ namespace ArchNet.Service.Console
             _errors = new List<Log>();
         }
 
-    public static  void Test()
-        {
-            ConsoleService.Log("This is a feature log message", eLogPriority.FEATURE);
-            ConsoleService.Error("This is a feature error message", eLogPriority.FEATURE);
-            ConsoleService.Warning("This is a feature warning message", eLogPriority.FEATURE);
-
-
-            ConsoleService.Log("This is a important log message", eLogPriority.IMPORTANT);
-            ConsoleService.Error("This is a important log message", eLogPriority.IMPORTANT);
-            ConsoleService.Warning("This is a important warning message", eLogPriority.IMPORTANT);
-
-            ConsoleService.Log("This is a methods log message", eLogPriority.METHODS);
-            ConsoleService.Error("This is a methods error message", eLogPriority.METHODS);
-            ConsoleService.Warning("This is a methods warning message", eLogPriority.METHODS);
-
-            ConsoleService.Log("This is a loop log message", eLogPriority.LOOP);
-            ConsoleService.Error("This is a loop error message", eLogPriority.LOOP);
-            ConsoleService.Warning("This is a loop warning message", eLogPriority.LOOP);
-
-            ConsoleService.Log("This is a custom log message", eLogPriority.CUSTOM);
-            ConsoleService.Error("This is a custom error message", eLogPriority.CUSTOM);
-            ConsoleService.Warning("This is a custom warning message", eLogPriority.CUSTOM);
-        }
-
         #region Micro Services
 
         /// <summary>
