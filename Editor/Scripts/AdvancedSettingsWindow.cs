@@ -20,6 +20,26 @@ namespace ArchNet.Service.Console.Editor
 
         #endregion
 
+
+        #region Public Methods
+        public static AdvancedSettingsWindow Instance { get; private set; }
+        public static bool IsOpen
+        {
+            get { return Instance != null; }
+        }
+
+        public static void ShowWindow()
+        {
+            GetWindow<AdvancedSettingsWindow>("Advanced Settings");
+        }
+
+        void OnEnable()
+        {
+            Instance = this;
+        }
+
+        #endregion
+
         #region Unity Methods
 
         private void OnGUI()

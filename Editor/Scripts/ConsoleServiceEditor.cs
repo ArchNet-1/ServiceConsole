@@ -1,7 +1,6 @@
 ﻿using ArchNet.Service.Console.Enum;
 using ArchNet.Service.Console.Model;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEditor;
 using UnityEngine;
 
@@ -68,7 +67,9 @@ namespace ArchNet.Service.Console.Editor
 
         #endregion
 
+
         #region Private Methods
+
 
         [MenuItem("ArchNet/Services/Console")]
         static void Init()
@@ -211,9 +212,7 @@ namespace ArchNet.Service.Console.Editor
         {
             if (GUILayout.Button(new GUIContent("[Advanced Settings]"), EditorStyles.toolbarButton, GUILayout.Width(150)))
             {
-                AdvancedSettingsWindow window = ScriptableObject.CreateInstance<AdvancedSettingsWindow>();
-                window.position = new Rect(Screen.width / 2, Screen.height / 2 + 160, 250, 250);
-                window.ShowPopup();
+                AdvancedSettingsWindow.ShowWindow();
             }
         }
 
