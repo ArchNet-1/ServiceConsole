@@ -57,12 +57,16 @@ namespace ArchNet.Service.Console
         {
             string lResult = "";
 
-            for (int i = 1; i < pStack.FrameCount; i++)
+            for (int i = 1; i <= pStack.FrameCount; i++)
             {
                 lResult += "\n_______________________________________________________________";
-                lResult += "\nFile : " + pStack.GetFrame(i).GetFileName();
-                lResult += "\nMethod : " + pStack.GetFrame(i).GetMethod().Name + "()";
-                lResult += "\nLine : " + pStack.GetFrame(i).GetFileLineNumber();
+
+                if (pStack.GetFrame(i) != null)
+                {
+                    lResult += "\nFile : " + pStack.GetFrame(i).GetFileName();
+                    lResult += "\nMethod : " + pStack.GetFrame(i).GetMethod().Name + "()";
+                    lResult += "\nLine : " + pStack.GetFrame(i).GetFileLineNumber();
+                }
             }
 
             return lResult;
