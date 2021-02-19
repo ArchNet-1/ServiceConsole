@@ -52,9 +52,6 @@ This is an advanced Console Service for your game.
 - Filter
 - Searching
 
-- IsFullyVisible : You can check if a RectTransform is in sight or in screen point from a list of transform ( your renderer list )
-If the RectTransform is you can for example active the RectTransform gameobject.
-
 Get the github HTTPS project url and load it in Unity Package Manager windows
 
 in Unity : Windows -> Package Manager -> + -> Add package from git url
