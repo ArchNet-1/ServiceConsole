@@ -1,7 +1,10 @@
-﻿using UnityEditor;
+// ArchNet · Console Service — Window to pick which priorities the Console Service shows.
+// Docs: https://archnet-plateform.fr/#ServiceConsole
+
+using UnityEditor;
 using UnityEngine;
 
-namespace ArchNet.Service.Console.Editor
+namespace ArchNet.Service.Editor
 {
     /// <summary>
     /// [SERVICE] - [ARCH NET] - [CONSOLE] : Advanced Settings Editor Window

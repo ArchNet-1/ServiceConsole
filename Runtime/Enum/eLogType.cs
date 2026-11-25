@@ -1,4 +1,7 @@
-﻿namespace ArchNet.Service.Console.Enum
+// ArchNet · Console Service — Kind of a Console Service entry (log, warning, error…).
+// Docs: https://archnet-plateform.fr/#ServiceConsole
+
+namespace ArchNet.Service
 {
     /// <summary>
     /// [SERVICE] - [ARCH NET] - [CONSOLE] : enum to refere all level of a log

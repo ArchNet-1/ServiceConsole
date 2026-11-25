@@ -1,0 +1,18 @@
+{
+    "name": "ArchNet.Service.Console.Editor",
+    "rootNamespace": "ArchNet.Service.Editor",
+    "references": [
+        "ArchNet.Service.Console"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

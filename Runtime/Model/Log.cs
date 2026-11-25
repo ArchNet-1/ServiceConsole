@@ -1,7 +1,9 @@
-﻿using ArchNet.Service.Console.Enum;
+// ArchNet · Console Service — One Console Service entry: title, message, kind, priority and call stack.
+// Docs: https://archnet-plateform.fr/#ServiceConsole
+
 using UnityEngine;
 
-namespace ArchNet.Service.Console.Model
+namespace ArchNet.Service
 {
     /// <summary>
     /// [SERVICE] - [ARCH NET] - [CONSOLE] : Model class Log

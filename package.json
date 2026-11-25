@@ -1,19 +1,20 @@
 {
   "name": "com.archnet.service.console",
-  "version": "1.0.0",
-  "displayName": "Arch Net Service Console",
-  "description": "Service for a custom Console",
-  "unity": "2020.1",
-  "unityRelease": "0b5",
+  "version": "2.0.0",
+  "displayName": "ArchNet - Console Service",
+  "description": "A second console for your own messages, sorted by priority and shown in its own window, each with its call stack.",
+  "unity": "6000.0",
+  "documentationUrl": "https://archnet-plateform.fr/#ServiceConsole",
+  "changelogUrl": "https://github.com/ArchNet-1/ServiceConsole/blob/master/CHANGELOG.md",
+  "licensesUrl": "https://github.com/ArchNet-1/ServiceConsole/blob/master/LICENSE.md",
   "keywords": [
-    "Arch",
-    "ArchNet",
-    "Service",
-    "Console",
-    "Custom"
+    "archnet",
+    "service",
+    "console"
   ],
   "author": {
-    "name": "Arch Net",
-    "email": "archnetmodule@gmail.com"
+    "name": "ArchNet",
+    "email": "archnetmodule@gmail.com",
+    "url": "https://archnet-plateform.fr"
   }
 }

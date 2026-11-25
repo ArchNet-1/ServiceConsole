@@ -1,6 +1,9 @@
-﻿using System;
+// ArchNet · Console Service — Which priorities the Console Service window shows.
+// Docs: https://archnet-plateform.fr/#ServiceConsole
 
-namespace ArchNet.Service.Console.Model
+using System;
+
+namespace ArchNet.Service
 {
     /// <summary>
     /// [SERVICE] - [ARCH NET] - [CONSOLE] : Model class Advanced settings

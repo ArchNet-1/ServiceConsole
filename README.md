@@ -1,69 +1,32 @@
-
-<!-- PROJECT LOGO -->
-<br />
 <p align="center">
-  <a href="">
-    <img src="https://archnet-plateform.fr/images/ArchNetLogoWithBck.png" alt="Logo" width="300">
-  </a>
-
-  <h3 align="center">Service Console</h3>
+  <a href="https://archnet-plateform.fr"><img src="https://archnet-plateform.fr/ArchNetLogoWithBck.png" alt="ArchNet" width="240"></a>
 </p>
 
+# ArchNet · Console Service
 
+A second console for your own messages, sorted by priority and shown in its own window, each with its call stack.
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
+- Unity **6000.0** or newer · No dependency.
+- Part of [ArchNet](https://archnet-plateform.fr), free and open-source Unity packages
 
-* [What is ArchNet](#about-the-project)
-* [Usage](#usage)
-* [Contact](#contact)
+## Install
 
+*Window > Package Manager > + > Install package from git URL…*
 
+```
+https://github.com/ArchNet-1/ServiceConsole.git
+```
 
-<!-- ABOUT THE PROJECT -->
-## What is Arch Net
+## Use
 
-Arch Net is a free archive plateform who regroup multipe modules, extensions, library, desgin patterns, services to help people to develop a video game.
-All archives are free and open source ! feel free to help or to ask some new archive by contacting "archnetmodule@gmail.com"
+```csharp
+using ArchNet.Service;
 
-Every archive are not perfect, develop for a basic usage, feel free to customize or update them.
+ConsoleService.Log("Level loaded", eLogPriority.FEATURE);
+```
 
-Why use Arch Net module ?
+Open *ArchNet > Services > Console*.
 
-Here's why:
-* Your time should be focused on creating something amazing.
-* Don't waste time ! Archives are here to help you !
-* You are not a developer ? You can use it too !
+## License
 
-Of course, this is not a pro service, of course there will be bug or error, shit happen, please contact us if you have some issue with one of our archive !
-
-The best reward for us is to see our archive used in your project ! :) 
-
-That all folks !
-
-
-<!-- Usage -->
-## usage
-
-SERVICE IN ALPHA VERSION
-This is an advanced Console Service for your game.
-- Full Stack
-- Advanced Settings
-- Filter
-- Searching
-
-Get the github HTTPS project url and load it in Unity Package Manager windows
-
-in Unity : Windows -> Package Manager -> + -> Add package from git url
-
-### Installation
-
-1. Get the github HTTPS project url and load it in Unity Package Manager windows
-in Unity : Windows -> Package Manager -> + -> Add package from git url
-2. Clone the repo
-3. The service is available in the navbar : ArchNet / Service / Console
-
-<!-- CONTACT -->
-## Contact
-
-Arch Net - archnetmodule@gmail.com
+See [LICENSE.md](LICENSE.md).

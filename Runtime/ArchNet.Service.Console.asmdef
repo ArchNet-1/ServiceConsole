@@ -1,6 +1,6 @@
 {
-    "name": "ArchNet.Editor.Service.Console",
-    "rootNamespace": "",
+    "name": "ArchNet.Service.Console",
+    "rootNamespace": "ArchNet.Service",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

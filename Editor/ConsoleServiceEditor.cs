@@ -1,10 +1,12 @@
-﻿using ArchNet.Service.Console.Enum;
-using ArchNet.Service.Console.Model;
+// ArchNet · Console Service — The Console Service window: ArchNet > Services > Console.
+// Docs: https://archnet-plateform.fr/#ServiceConsole
+
+using ArchNet.Service;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace ArchNet.Service.Console.Editor
+namespace ArchNet.Service.Editor
 {
     /// <summary>
     /// [SERVICE] - [ARCH NET] - [CONSOLE] : Console Service Editor Window
