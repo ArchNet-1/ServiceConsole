@@ -4,6 +4,7 @@
   "displayName": "ArchNet - Console Service",
   "description": "A second console for your own messages, sorted by priority and shown in its own window, each with its call stack.",
   "unity": "6000.0",
+  "license": "MIT",
   "documentationUrl": "https://archnet-plateform.fr/#ServiceConsole",
   "changelogUrl": "https://github.com/ArchNet-1/ServiceConsole/blob/master/CHANGELOG.md",
   "licensesUrl": "https://github.com/ArchNet-1/ServiceConsole/blob/master/LICENSE.md",

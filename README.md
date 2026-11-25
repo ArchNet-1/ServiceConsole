@@ -29,4 +29,4 @@ Open *ArchNet > Services > Console*.
 
 ## License
 
-See [LICENSE.md](LICENSE.md).
+MIT, see [LICENSE.md](LICENSE.md).
